@@ -1,0 +1,19 @@
+[project]
+name = "agent-xin"
+version = "0.1.0"
+description = "a agent cli for xin"
+readme = "README.md"
+authors = [
+    { name = "xin", email = "2623674073@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=15.0.0",
+    "typer>=0.26.7",
+]
+
+[project.scripts]
+agent-xin = "agent_xin.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent_xin"]
